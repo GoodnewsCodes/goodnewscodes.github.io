@@ -6,360 +6,17 @@
     <title>Goodnews Anwana | Software Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #FF5733;
-            --primary-light: #ff8c66;
-            --primary-dark: #e04a2b;
-            --black: #121212;
-            --dark-gray: #1e1e1e;
-            --light-gray: #f5f5f5;
-            --white: #ffffff;
-            --transition: all 0.3s ease;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 8px 15px rgba(255, 87, 51, 0.2);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: var(--black);
-            color: var(--white);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        
-        /* Navigation */
-        nav {
-            background: rgba(18, 18, 18, 0.9);
-            padding: 1.5rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-            box-shadow: var(--shadow);
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            list-style: none;
-            max-width: 1100px;
-            width: 100%;
-        }
-        
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: var(--transition);
-            position: relative;
-        }
-        
-        nav a:hover {
-            color: var(--primary);
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: var(--primary);
-            bottom: 0;
-            left: 0;
-            transition: var(--transition);
-        }
-        
-        nav a:hover::after {
-            width: 100%;
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1100px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        section {
-            padding: 4rem 0;
-            scroll-margin-top: 80px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        section:not(:last-child) {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        /* Home Section */
-        #home {
-            text-align: center;
-            padding-top: 6rem;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, var(--primary), var(--primary-light));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-weight: 700;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--white);
-            text-align: center;
-        }
-        
-        h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            color: var(--white);
-            font-weight: 450;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid var(--primary);
-            margin: 2rem auto;
-            object-fit: cover;
-            box-shadow: 0 0 20px rgba(255, 87, 51, 0.4);
-            transition: var(--transition);
-        }
-        
-        .profile-img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 87, 51, 0.6);
-        }
-        
-        p {
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-        }
-
-        i {
-            color: #ddc7bf;
-        }
-        
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Changed to auto-fit with max width */
-            justify-content: center; /* Center the grid columns */
-            gap: 2rem;
-            margin: 2rem auto 0; /* Center the grid container */
-            width: 100%;
-            max-width: 1100px;
-            justify-items: center; /* Center items within their cells */
-        }
-
-        .project {
-            background: var(--dark-gray);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: var(--transition);
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            width: 100%; /* Ensure full width of grid cell */
-            max-width: 350px; /* Match the max in grid-template-columns */
-        }
-
-        .project:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--primary);
-        }
-
-        .project-content {
-            padding: 1.5rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-      
-        .project h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-            text-align: center;
-        }
-        
-        .project p {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--primary);
-            font-weight: 500;
-            text-decoration: none;
-            transition: var(--transition);
-            justify-content: center;
-            margin: 0 auto;
-        }
-        
-        .project-link:hover {
-            color: var(--primary-light);
-            transform: translateX(5px);
-        }
-        
-        .project-link i {
-            margin-left: 0.5rem;
-            transition: var(--transition);
-        }
-        
-        /* Skills Section */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            max-width: 800px;
-            width: 100%;
-        }
-        
-        .skill {
-            background: linear-gradient(135deg, var(--dark-gray), var(--black));
-            color: var(--primary);
-            padding: 0.5rem 1.5rem;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-        
-        
-        /* Contact Section */
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-            max-width: 800px;
-            width: 100%;
-        }
-        
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--white);
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            transition: var(--transition);
-        }
-        
-        .contact-link:hover {
-            background: var(--primary);
-            color: var(--white);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .contact-link i {
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-            width: 100%;
-        }
-        
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        section {
-            animation: fadeIn 0.8s ease forwards;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav ul {
-                gap: 1rem;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .contact-link {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
-<body>
+
+<body class="loading">
+    <div class="loader"></div>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -369,44 +26,19 @@
             <h1>Goodnews Anwana</h1>
             <img src="https://github.com/GoodnewsCodes.png" alt="Profile Photo" class="profile-img">
             <h2>Software Developer</h2>
-            <h4>I build innovative software solutions that automate tasks and solve real-world problems. Passionate about creating efficient, scalable applications with clean code.</h4>
+            <h4>I build innovative software solutions with focus on problem solving and optimizing efficiency.</h4>
         </section>
-        
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <div class="project-content">
-                        <h3>JAV Project</h3>
-                        <p>A Flutter application that takes Attendance in a University demonstrating useful functionalities with clean architecture and modern design patterns.</p>
-                        <a href="https://github.com/GoodnewsCodes/jav-project" target="_blank" class="project-link">
-                            View on GitHub <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-content">
-                        <h3>Automation Script</h3>
-                        <p>Python script that automates repetitive tasks, saving hours of manual work with intelligent scheduling.</p>
-                        <a href="https://github.com/GoodnewsCodes/automation-script" target="_blank" class="project-link">
-                            View on GitHub <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
+
         <section id="skills">
-            <h2>Technical Skills</h2>
+            <h2>Languages/Frameworks I have worked with</h2>
             <div class="skills-container">
                 <span class="skill"><i class="fab fa-python"></i> Python</span>
-                <span class="skill"><i class="fab fa-java"></i> Java</span>
                 <span class="skill"><i class="fab fa-git-alt"></i> Git</span>
                 <span class="skill"><i class="fa-regular fa-file-excel"></i> Excel for Data Analysis</span>
                 <span class="skill"><i class="fas fa-database"></i> SQL</span>
                 <span class="skill"><i class="fab fa-html5"></i> HTML</span>
                 <span class="skill"><i class="fab fa-css3-alt"></i> CSS</span>
-                <span class="skill"><i class="fab fa-php"></i> PHP</span>
+                <span class="skill"><i class="fa-brands fa-react"></i></i> React</span>
                 <span class="skill">
                     <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
                         <path fill="#ffffff" d="M429.5 236.3L291.7 374.1 429.5 512H272l-59.1-59.1-78.8-78.8L272 236.3H429.5zM272 0L16 256l78.8 78.8L429.5 0H272z"/>
@@ -417,10 +49,99 @@
                         <path fill="#ffffff" d="M378.6 78.9c-2.8-.1-5.6-.2-8.5-.2l-264.1 0 143.2-72C256.6 2.3 268 0 279.6 0c13.5 0 29.4 9.2 37 16.8l62 62zM107.3 96.5l262.8 0c16 0 25.4 1.4 35.4 9.3L512 212.2 512 421l-79.3 .7L107.3 96.5zM96.5 373l0-262.2L420.3 434.6l.7 77.4-212.2 0-98.1-98.2 0 0C99.4 402.5 96.5 398.5 96.5 373zM78.7 105.3l0 267.7c0 3.3 .1 6.3 .2 9.1l-62-62C6.5 309.3 0 294.3 0 279.6c0-6.8 3.9-17.5 6.7-23.6l72-150.7z"/>
                     </svg> Dart
                 </span>
-                <span class="skill"><i class="fas fa-fire"></i> Firebase</span>
+                <span class="skill"><i class="fas fa-fire-flame-curved"></i> Firebase</span>
+                <span class="skill"><i class="fas fa-bolt"></i> Supabase</span>
             </div>
         </section>
-        
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Student Fee Clearance 🎓</h3>
+                        <p>A web app for university students to get receipts for paid fees verified by management and get cleared before exams.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <a href="https://github.com/GoodnewsCodes/Student-Fee-Clearance" target="_blank" class="project-link">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>TitheSpace ⛪</h3>
+                        <p>A modern web app UI built with React for managing and tracking tithe contributions and church finances.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <a href="https://github.com/GoodnewsCodes/tithe-space" target="_blank" class="project-link">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Accredify Suite 📜</h3>
+                        <p>A Python desktop app for creating professional certificates with features like templates, logo/signature uploads, QR codes and batch CSV support.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="https://github.com/GoodnewsCodes/Accredify_Suite" target="_blank" class="project-link">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>DressCode 👗</h3>
+                        <p>A digital styling tool to visualize clothing color combinations and find hues that complement unique skin tones.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <a href="https://github.com/GoodnewsCodes/DressCode" target="_blank" class="project-link">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>HealthSync 🏥</h3>
+                        <p>A Hospital Management Software to streamline clinic operations with flawless EHR & inventory management. Currently in development for a leading healthcare provider.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <a href="https://github.com/GoodnewsCodes/HealthSync" target="_blank" class="project-link">
+                            (Coming Soon) <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h3>JAV Attendance App 📱</h3>
+                        <p>A Flutter App that takes Attendance in a University with multiple functionalities built with clean architecture and modern design patterns.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <a href="#" target="_blank" class="project-link">
+                            Almost at MVP <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact">
             <h2>Get In Touch</h2>
             <div class="contact-links">
@@ -433,15 +154,20 @@
                 <a href="https://www.linkedin.com/in/goodnews-anwana/" target="_blank" class="contact-link">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="#" class="contact-link">
+                <a href="https://github.com/GoodnewsCodes/Resume/blob/main/Goodnews%20Anwana's%20Resume.pdf" target="_blank" class="contact-link">
                     <i class="fas fa-file-alt"></i> Resume
                 </a>
             </div>
         </section>
     </div>
+
+    <a href="#home" id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     
     <footer>
-        <p>&copy; 2025 Goodnews Anwana. All rights reserved.</p>
+        <p>&copy; 2025 Goodnews Anwana.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
