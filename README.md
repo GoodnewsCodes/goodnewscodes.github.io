@@ -38,13 +38,9 @@ To customize this portfolio for your own use:
 3. Add/remove projects in the projects section
 4. Modify the skills list to reflect your expertise
 5. Update contact links with your own information
-
-## License
-This project is open-source and available for personal use. Please provide attribution if you use this as a template for your own portfolio.
+
 
 ## Future Improvements
 - Add dark/light mode toggle
-- Implement a blog section
 - Add project filtering by technology
-- Include more detailed project descriptions with screenshots
-- Add a downloadable resume option
+- Include more detailed project descriptions with screenshots
