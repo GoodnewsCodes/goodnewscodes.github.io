@@ -1,5 +1,5 @@
+document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
-// Loader
 window.addEventListener('load', function() {
     setTimeout(function() {
         const loader = document.querySelector('.loader');
@@ -10,10 +10,10 @@ window.addEventListener('load', function() {
                 loader.remove();
             }, 500);
         }
-    }, 1000); // 1 second delay
+    }, 1000);
 });
 
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -146,7 +146,6 @@ try {
     console.error('Carousel initialization failed:', error);
 }
 
-// Add to your existing script
 const backToTopButton = document.createElement('a');
 backToTopButton.href = '#home';
 backToTopButton.className = 'back-to-top';

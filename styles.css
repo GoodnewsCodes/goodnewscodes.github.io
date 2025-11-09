@@ -224,8 +224,8 @@
     }
 
     .profile-img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
         border-radius: 50%;
         border: 5px solid var(--primary);
         margin: 2rem auto;
@@ -717,8 +717,8 @@
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
         }
 
         .contact-links {
