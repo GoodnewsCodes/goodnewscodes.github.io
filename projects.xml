@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <title>FoodLens</title>
+        <icon>fas fa-utensils</icon>
+        <description>FoodLens is an AI-powered tool that identifies dishes and their nutritional content from food photos.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/FoodLens/refs/heads/main/src/assets/hero.jpg</image>
+        <technologies>
+            <tech>React</tech>
+        </technologies>
+        <links>
+            <link url="https://goodnewscodes.github.io/FoodLens/" text="Preview Site" />
+            <link url="https://github.com/GoodnewsCodes/FoodLens" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
+        <title>Student Fee Clearance</title>
+        <icon>fas fa-graduation-cap</icon>
+        <description>A web app for university students to get receipts for paid fees verified by management and get cleared before exams.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/Student-Fee-Clearance/refs/heads/master/Screenshot%202025-08-05%20183418.png</image>
+        <technologies>
+            <tech>React</tech>
+            <tech>TypeScript</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/Student-Fee-Clearance" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
+        <title>TitheSpace</title>
+        <icon>fas fa-church</icon>
+        <description>A modern web app UI built with React for managing and tracking tithe contributions and church finances.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/TitheSpace/refs/heads/main/tithespace.png</image>
+        <technologies>
+            <tech>React</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/tithe-space" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
+        <title>Accredify Suite</title>
+        <icon>fas fa-scroll</icon>
+        <description>A Python desktop app for creating professional certificates with features like templates, logo/signature uploads, QR codes and batch CSV support.</description>
+        <image>https://via.placeholder.com/600x400?text=Accredify+Suite</image>
+        <technologies>
+            <tech>Python</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/Accredify_Suite" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
+        <title>DressCode</title>
+        <icon>fas fa-tshirt</icon>
+        <description>A digital styling tool to visualize clothing color combinations and find hues that complement unique skin tones.</description>
+        <image>https://via.placeholder.com/600x400?text=DressCode</image>
+        <technologies>
+            <tech>React</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/DressCode" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
+        <title>HealthSync</title>
+        <icon>fas fa-hospital</icon>
+        <description>A Hospital Management Software to streamline clinic operations with flawless EHR &amp; inventory management. Currently in development for a leading healthcare provider.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/HealthSync/refs/heads/main/Screenshot%202025-04-19%20142049.png</image>
+        <technologies>
+            <tech>Flutter</tech>
+            <tech>Dart</tech>
+            <tech>Firebase</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/HealthSync" text="(Coming Soon)" />
+        </links>
+    </project>
+</projects>
