@@ -995,3 +995,22 @@ section {
     font-size: 0.95rem;
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 6px;
+  border: 3px solid var(--black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
