@@ -250,3 +250,14 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => console.error("Error loading projects:", error));
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the chart container using its class name
+  const chartContainer = document.querySelector('.github-chart-container');
+  
+  if (chartContainer) {
+      // Set the horizontal scroll position (scrollLeft) to the total scrollable width (scrollWidth)
+      // This scrolls the container all the way to the right, showing recent commits.
+      chartContainer.scrollLeft = chartContainer.scrollWidth;
+  }
+});

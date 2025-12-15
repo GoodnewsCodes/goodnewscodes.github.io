@@ -38,6 +38,22 @@
             <link url="https://github.com/GoodnewsCodes/tithe-space" text="View on GitHub" />
         </links>
     </project>
+    
+    <project>
+        <title>CGPA Calculator</title>
+        <icon>fas fa-calculator</icon>
+        <description>A web application designed to help Nigerian university students calculate their Cumulative GPA (CGPA) based on their semester results.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/CGPA-Calculator/refs/heads/main/Screenshot%202025-12-15%20180259.png</image>
+        <technologies>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>JavaScript</tech>
+        </technologies>
+        <links>
+            <link url="https://goodnewscodes.github.io/CGPA-Calculator/" text="Preview Site" />
+        </links>
+    </project>
+
     <project>
         <title>Accredify Suite</title>
         <icon>fas fa-scroll</icon>
@@ -63,20 +79,37 @@
         </links>
     </project>
 
-    <project>
-        <title>CGPA Calculator</title>
-        <icon>fas fa-calculator</icon>
-        <description>A web application designed to help Nigerian university students calculate their Cumulative GPA (CGPA) based on their semester results.</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/CGPA-Calculator/refs/heads/main/Screenshot%202025-12-15%20180259.png</image>
+    <!-- <project>
+        <title>JAV Attendance</title>
+        <icon>fas fa-laptop-code</icon>
+        <description>Assisted in the quick development of an attendance app</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/jav-apk/refs/heads/main/Screenshot%202025-12-13%20092617.png</image>
         <technologies>
-            <tech>Flutter</tech>
-            <tech>Dart</tech>
-            <tech>Firebase</tech>
+            <tech>Lottie JSONs</tech>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>JavaScript</tech>
         </technologies>
         <links>
-            <link url="https://goodnewscodes.github.io/CGPA-Calculator/" text="Preview Site" />
+            <link url="https://justattendvirtually.netlify.app/" text="Preview Site" />
         </links>
-    </project>
+    </project> -->
+    
+    <!-- <project>
+        <title>JAV Website</title>
+        <icon>fas fa-laptop-code</icon>
+        <description>A website for an attendance app with lottie animations displaying core features of the app</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/jav-apk/refs/heads/main/Screenshot%202025-12-13%20092617.png</image>
+        <technologies>
+            <tech>Lottie JSONs</tech>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>JavaScript</tech>
+        </technologies>
+        <links>
+            <link url="https://justattendvirtually.netlify.app/" text="Preview Site" />
+        </links>
+    </project> -->
 
     <!-- <project>
         <title>HealthSync</title>
