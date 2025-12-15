@@ -16,7 +16,7 @@
     <project>
         <title>Student Fee Clearance</title>
         <icon>fas fa-graduation-cap</icon>
-        <description>A web app for university students to get receipts for paid fees verified by management and get cleared before exams.</description>
+        <description>A web app for university students to get receipts for paid fees verified and cleared before exams.</description>
         <image>https://raw.githubusercontent.com/GoodnewsCodes/Student-Fee-Clearance/refs/heads/master/Screenshot%202025-08-05%20183418.png</image>
         <technologies>
             <tech>React</tech>
@@ -62,7 +62,23 @@
             <link url="https://github.com/GoodnewsCodes/DressCode" text="View on GitHub" />
         </links>
     </project>
+
     <project>
+        <title>CGPA Calculator</title>
+        <icon>fas fa-calculator</icon>
+        <description>A web application designed to help Nigerian university students calculate their Cumulative GPA (CGPA) based on their semester results.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/CGPA-Calculator/refs/heads/main/Screenshot%202025-12-15%20180259.png</image>
+        <technologies>
+            <tech>Flutter</tech>
+            <tech>Dart</tech>
+            <tech>Firebase</tech>
+        </technologies>
+        <links>
+            <link url="https://goodnewscodes.github.io/CGPA-Calculator/" text="Preview Site" />
+        </links>
+    </project>
+
+    <!-- <project>
         <title>HealthSync</title>
         <icon>fas fa-hospital</icon>
         <description>A Hospital Management Software to streamline clinic operations with flawless EHR &amp; inventory management. Currently in development for a leading healthcare provider.</description>
@@ -75,5 +91,7 @@
         <links>
             <link url="https://github.com/GoodnewsCodes/HealthSync" text="(Coming Soon)" />
         </links>
-    </project>
+    </project> -->
+
+
 </projects>
