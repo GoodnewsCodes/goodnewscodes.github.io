@@ -43,14 +43,14 @@
         <title>ZENU</title>
         <icon>fas fa-microphone</icon>
         <description>ZENU is an AI-powered digital producer for professional script creation and news curation, currently focused on its user interface and navigation flows.</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/ZENU/refs/heads/main/Screenshot%202025-12-16%20145926.png?token=GHSAT0AAAAAADQARJLZ7HJQSJRXWZ73ARSK2KBM5MQ</image>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/goodnewscodes.github.io/refs/heads/main/images/ZENU.png</image>
         <technologies>
             <tech>HTML</tech>
             <tech>CSS</tech>
             <tech>JavaScript</tech>
         </technologies>
         <links>
-            <link url="https://goodnewscodes.github.io/ZENU/" text="Preview Site" />
+            <link url="https://github.com/GoodnewsCodes/ZENU" text="View on GitHub" />
         </links>
     </project>
 
