@@ -4,18 +4,18 @@ if (currentYearElement) {
 }
 
 window.addEventListener("load", function () {
-  console.log("Window loaded"); // Debugging log
+  // console.log("Window loaded"); // Debugging log
   setTimeout(function () {
     const loader = document.querySelector(".loader");
-    console.log("Loader element:", loader); // Debugging log
+    // console.log("Loader element:", loader); // Debugging log
     if (loader) {
       loader.style.opacity = "0";
-      console.log("Loader opacity set to 0"); // Debugging log
+      // console.log("Loader opacity set to 0"); // Debugging log
       document.body.classList.remove("loading");
-      console.log("Loading class removed from body"); // Debugging log
+      // console.log("Loading class removed from body"); // Debugging log
       setTimeout(function () {
         loader.remove();
-        console.log("Loader removed from DOM"); // Debugging log
+        // console.log("Loader removed from DOM"); // Debugging log
       }, 500);
     } else {
       console.warn("Loader element not found"); // Debugging log
@@ -39,136 +39,6 @@ document.querySelectorAll("nav a").forEach((anchor) => {
     history.pushState(null, null, targetId);
   });
 });
-
-try {
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel-inner");
-    const items = document.querySelectorAll(".carousel-item");
-    const indicators = document.querySelectorAll(".indicator");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-
-    if (carousel) {
-      let currentIndex = 0;
-      let intervalId;
-      const intervalTime = 3000;
-      let isAnimating = false;
-      const animationDuration = 600;
-
-      function updateCarousel() {
-        if (isAnimating) return;
-        isAnimating = true;
-
-        items.forEach((item, index) => {
-          item.classList.toggle("active", index === currentIndex);
-        });
-
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-        indicators.forEach((indicator, index) => {
-          indicator.classList.toggle("active", index === currentIndex);
-        });
-
-        setTimeout(() => {
-          isAnimating = false;
-        }, animationDuration);
-      }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % items.length;
-        updateCarousel();
-      }
-
-      function prevSlide() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        updateCarousel();
-      }
-
-      function goToSlide(index) {
-        currentIndex = index;
-        updateCarousel();
-      }
-
-      function startAutoSlide() {
-        clearInterval(intervalId);
-        intervalId = setInterval(() => {
-          if (!isAnimating) nextSlide();
-        }, intervalTime);
-      }
-
-      if (nextBtn) {
-        nextBtn.addEventListener("click", () => {
-          nextSlide();
-          startAutoSlide();
-        });
-      }
-
-      if (prevBtn) {
-        prevBtn.addEventListener("click", () => {
-          prevSlide();
-          startAutoSlide();
-        });
-      }
-
-      indicators.forEach((indicator, index) => {
-        indicator.addEventListener("click", () => {
-          goToSlide(index);
-          startAutoSlide();
-        });
-      });
-
-      let touchStartX = 0;
-      let touchEndX = 0;
-
-      carousel.addEventListener(
-        "touchstart",
-        (e) => {
-          touchStartX = e.changedTouches[0].screenX;
-        },
-        { passive: true }
-      );
-
-      carousel.addEventListener(
-        "touchend",
-        (e) => {
-          touchEndX = e.changedTouches[0].screenX;
-          handleSwipe();
-        },
-        { passive: true }
-      );
-
-      function handleSwipe() {
-        const difference = touchStartX - touchEndX;
-        if (difference > 50) {
-          nextSlide();
-        } else if (difference < -50) {
-          prevSlide();
-        }
-        startAutoSlide();
-      }
-
-      carousel.addEventListener("mouseenter", () => {
-        clearInterval(intervalId);
-      });
-
-      carousel.addEventListener("mouseleave", startAutoSlide);
-
-      updateCarousel();
-      startAutoSlide();
-
-      window.addEventListener("resize", () => {
-        carousel.style.transition = "none";
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        setTimeout(() => {
-          carousel.style.transition =
-            "transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1)";
-        }, 10);
-      });
-    }
-  });
-} catch (error) {
-  console.error("Carousel initialization failed:", error);
-}
 
 const backToTopButton = document.createElement("a");
 backToTopButton.href = "#home";
@@ -251,13 +121,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Select the chart container using its class name
-  const chartContainer = document.querySelector('.github-chart-container');
-  
+  const chartContainer = document.querySelector(".github-chart-container");
+
   if (chartContainer) {
-      // Set the horizontal scroll position (scrollLeft) to the total scrollable width (scrollWidth)
-      // This scrolls the container all the way to the right, showing recent commits.
-      chartContainer.scrollLeft = chartContainer.scrollWidth;
+    // Set the horizontal scroll position (scrollLeft) to the total scrollable width (scrollWidth)
+    // This scrolls the container all the way to the right, showing recent commits.
+    chartContainer.scrollLeft = chartContainer.scrollWidth;
   }
 });

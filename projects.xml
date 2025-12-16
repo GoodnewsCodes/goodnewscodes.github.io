@@ -7,6 +7,7 @@
         <image>https://raw.githubusercontent.com/GoodnewsCodes/FoodLens/refs/heads/main/src/assets/hero.jpg</image>
         <technologies>
             <tech>React</tech>
+            <tech>JavaScript</tech>
         </technologies>
         <links>
             <link url="https://goodnewscodes.github.io/FoodLens/" text="Preview Site" />
@@ -58,7 +59,7 @@
         <title>Accredify Suite</title>
         <icon>fas fa-scroll</icon>
         <description>A Python desktop app for creating professional certificates with features like templates, logo/signature uploads, QR codes and batch CSV support.</description>
-        <image>https://via.placeholder.com/600x400?text=Accredify+Suite</image>
+        <image>#</image>
         <technologies>
             <tech>Python</tech>
         </technologies>
@@ -71,7 +72,7 @@
         <title>DressCode</title>
         <icon>fas fa-tshirt</icon>
         <description>A digital styling tool to visualize clothing color combinations and find hues that complement unique skin tones.</description>
-        <image>https://via.placeholder.com/600x400?text=DressCode</image>
+        <image>#</image>
         <technologies>
             <tech>React</tech>
         </technologies>
@@ -92,7 +93,7 @@
             <tech>JavaScript</tech>
         </technologies>
         <links>
-            <link url="https://justattendvirtually.netlify.app/" text="Preview Site" />
+            <link url="#playStore_link" text="Preview App" />
         </links>
     </project> -->
     
