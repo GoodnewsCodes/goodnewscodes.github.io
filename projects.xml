@@ -39,7 +39,7 @@
         </links>
     </project>
     
-    <project>
+    <!-- <project>
         <title>CGPA Calculator</title>
         <icon>fas fa-calculator</icon>
         <description>A web application designed to help Nigerian university students calculate their Cumulative GPA (CGPA) based on their semester results.</description>
@@ -52,7 +52,7 @@
         <links>
             <link url="https://goodnewscodes.github.io/CGPA-Calculator/" text="Preview Site" />
         </links>
-    </project>
+    </project> -->
 
     <project>
         <title>Accredify Suite</title>
@@ -66,6 +66,7 @@
             <link url="https://github.com/GoodnewsCodes/Accredify_Suite" text="View on GitHub" />
         </links>
     </project>
+
     <project>
         <title>DressCode</title>
         <icon>fas fa-tshirt</icon>
