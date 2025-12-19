@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
+        <title>Student Fee Clearance</title>
+        <icon>fas fa-graduation-cap</icon>
+        <description>A web app for university students to get receipts for paid fees verified and cleared before exams.</description>
+        <image>https://raw.githubusercontent.com/GoodnewsCodes/Student-Fee-Clearance/refs/heads/master/Screenshot%202025-08-05%20183418.png</image>
+        <technologies>
+            <tech>React</tech>
+            <tech>TypeScript</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/Student-Fee-Clearance" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
         <title>FoodLens</title>
         <icon>fas fa-utensils</icon>
         <description>FoodLens is an AI-powered tool that identifies dishes and their nutritional content from food photos.</description>
@@ -12,19 +25,6 @@
         <links>
             <link url="https://goodnewscodes.github.io/FoodLens/" text="Preview Site" />
             <link url="https://github.com/GoodnewsCodes/FoodLens" text="View on GitHub" />
-        </links>
-    </project>
-    <project>
-        <title>Student Fee Clearance</title>
-        <icon>fas fa-graduation-cap</icon>
-        <description>A web app for university students to get receipts for paid fees verified and cleared before exams.</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/Student-Fee-Clearance/refs/heads/master/Screenshot%202025-08-05%20183418.png</image>
-        <technologies>
-            <tech>React</tech>
-            <tech>TypeScript</tech>
-        </technologies>
-        <links>
-            <link url="https://github.com/GoodnewsCodes/Student-Fee-Clearance" text="View on GitHub" />
         </links>
     </project>
     <project>
