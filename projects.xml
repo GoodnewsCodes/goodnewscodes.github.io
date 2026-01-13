@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
+        <title>IMG Pro</title>
+        <icon>fas fa-image</icon>
+        <description>A powerful desktop application for image manipulation and processing, built with Electron.</description>
+        <image>https://res.cloudinary.com/dw24flbzs/image/upload/v1768343895/banner_yuage2.png</image>
+        <technologies>
+            <tech>Electron</tech>
+            <tech>TypeScript</tech>
+            <tech>Sharp</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/IMGpro" text="View on GitHub" />
+        </links>
+    </project>
+    <project>
         <title>Student Fee Clearance</title>
         <icon>fas fa-graduation-cap</icon>
         <description>A web app for university students to get receipts for paid fees verified and cleared before exams.</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/Student-Fee-Clearance/refs/heads/master/Screenshot%202025-08-05%20183418.png</image>
+        <image>https://res.cloudinary.com/dw24flbzs/image/upload/v1768344188/Screenshot_2025-08-05_183418_wetkm7.png</image>
         <technologies>
             <tech>React</tech>
             <tech>TypeScript</tech>
@@ -44,7 +58,7 @@
         <title>ZENU</title>
         <icon>fas fa-microphone</icon>
         <description>ZENU is an AI-powered digital producer for professional script creation and news curation, currently focused on its user interface and navigation flows.</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/goodnewscodes.github.io/refs/heads/main/images/ZENU.png</image>
+        <image>https://res.cloudinary.com/dw24flbzs/image/upload/v1768344306/zenu_r7rygr.png</image>
         <technologies>
             <tech>HTML</tech>
             <tech>CSS</tech>
