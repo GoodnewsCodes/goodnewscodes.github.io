@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
+        <title>Just Attend Virtually (JAV)</title>
+        <icon>fas fa-laptop-code</icon>
+        <description>Aided in the development of the Just Attend Virtually App &amp; its official site jav.blimtechnologies.com.</description>
+        <image>https://www.blimtechnologies.com/images/JAV.png</image>
+        <technologies>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>JavaScript</tech>
+            <tech>Lottie JSONs</tech>
+        </technologies>
+        <links>
+            <link url="https://jav.blimtechnologies.com/" text="Visit Site" />
+        </links>
+    </project>
+    <project>
         <title>IMG Pro</title>
         <icon>fas fa-image</icon>
         <description>A powerful desktop application for image manipulation and processing, built with Electron.</description>
@@ -14,6 +29,7 @@
             <link url="https://github.com/GoodnewsCodes/IMGpro" text="View on GitHub" />
         </links>
     </project>
+
     <project>
         <title>Student Fee Clearance</title>
         <icon>fas fa-graduation-cap</icon>
@@ -27,7 +43,7 @@
             <link url="https://github.com/GoodnewsCodes/Student-Fee-Clearance" text="View on GitHub" />
         </links>
     </project>
-    <!-- <project>
+    <project>
         <title>FoodLens</title>
         <icon>fas fa-utensils</icon>
         <description>FoodLens is an AI-powered tool that identifies dishes and their nutritional content from food photos.</description>
@@ -40,8 +56,23 @@
             <link url="https://goodnewscodes.github.io/FoodLens/" text="Preview Site" />
             <link url="https://github.com/GoodnewsCodes/FoodLens" text="View on GitHub" />
         </links>
-    </project> -->
+    </project>
+    
     <project>
+        <title>ZENU</title>
+        <icon>fas fa-microphone</icon>
+        <description>Contributed to the development of ZENU, an AI-powered digital producer for professional script creation and news curation, focusing on its user interface and navigation flows.</description>
+        <image>https://res.cloudinary.com/dw24flbzs/image/upload/v1768344306/zenu_r7rygr.png</image>
+        <technologies>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>JavaScript</tech>
+        </technologies>
+        <links>
+            <link url="https://github.com/GoodnewsCodes/ZENU" text="View on GitHub" />
+        </links>
+    </project>
+<project>
         <title>TitheSpace</title>
         <icon>fas fa-church</icon>
         <description>A modern web app UI built with React for managing and tracking tithe contributions and church finances.</description>
@@ -55,82 +86,53 @@
     </project>
     
     <project>
-        <title>ZENU</title>
-        <icon>fas fa-microphone</icon>
-        <description>ZENU is an AI-powered digital producer for professional script creation and news curation, currently focused on its user interface and navigation flows.</description>
-        <image>https://res.cloudinary.com/dw24flbzs/image/upload/v1768344306/zenu_r7rygr.png</image>
+        <title>Crave</title>
+        <icon>fas fa-utensils</icon>
+        <description>A React Native Expo app providing meal recommendations with personalized onboarding and premium UI.</description>
+        <image>#</image>
         <technologies>
-            <tech>HTML</tech>
-            <tech>CSS</tech>
-            <tech>JavaScript</tech>
+            <tech>React Native</tech>
+            <tech>Expo</tech>
         </technologies>
         <links>
-            <link url="https://github.com/GoodnewsCodes/ZENU" text="View on GitHub" />
+            <link url="https://github.com/GoodnewsCodes/Crave" text="View on GitHub" />
         </links>
     </project>
 
     <project>
-        <title>Accredify Suite</title>
-        <icon>fas fa-scroll</icon>
-        <description>A Python desktop app for creating professional certificates with features like templates, logo/signature uploads, QR codes and batch CSV support.</description>
+        <title>NairaScan AI</title>
+        <icon>fas fa-file-invoice-dollar</icon>
+        <description>A local AI-powered bank statement and document analyzer built with Electron and React.</description>
         <image>#</image>
         <technologies>
-            <tech>Python</tech>
-        </technologies>
-        <links>
-            <link url="https://github.com/GoodnewsCodes/Accredify_Suite" text="View on GitHub" />
-        </links>
-    </project>
-
-    <project>
-        <title>DressCode</title>
-        <icon>fas fa-tshirt</icon>
-        <description>A digital styling tool to visualize clothing color combinations and find hues that complement unique skin tones.</description>
-        <image>#</image>
-        <technologies>
+            <tech>Electron</tech>
             <tech>React</tech>
+            <tech>Tailwind CSS</tech>
         </technologies>
         <links>
-            <link url="https://github.com/GoodnewsCodes/DressCode" text="View on GitHub" />
+            <link url="https://github.com/GoodnewsCodes/NairaScan-AI" text="View on GitHub" />
         </links>
     </project>
 
-    <!-- <project>
-        <title>JAV Attendance</title>
-        <icon>fas fa-laptop-code</icon>
-        <description>Assisted in the quick development of an attendance app</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/jav-apk/refs/heads/main/Screenshot%202025-12-13%20092617.png</image>
+    <!--<project>
+        <title>Sale-Sync</title>
+        <icon>fas fa-calculator</icon>
+        <description>A comprehensive Electron-based desktop accounting application for managing client accounts and tracking financial transactions.</description>
+        <image>#</image>
         <technologies>
-            <tech>Lottie JSONs</tech>
-            <tech>HTML</tech>
-            <tech>CSS</tech>
-            <tech>JavaScript</tech>
+            <tech>Electron</tech>
+            <tech>TypeScript</tech>
+            <tech>HTML/CSS</tech>
         </technologies>
         <links>
-            <link url="#playStore_link" text="Preview App" />
+            <link url="https://github.com/GoodnewsCodes/sale-sync" text="View on GitHub" />
         </links>
-    </project> -->
-    
-    <!-- <project>
-        <title>JAV Website</title>
-        <icon>fas fa-laptop-code</icon>
-        <description>A website for an attendance app with lottie animations displaying core features of the app</description>
-        <image>https://raw.githubusercontent.com/GoodnewsCodes/jav-apk/refs/heads/main/Screenshot%202025-12-13%20092617.png</image>
-        <technologies>
-            <tech>Lottie JSONs</tech>
-            <tech>HTML</tech>
-            <tech>CSS</tech>
-            <tech>JavaScript</tech>
-        </technologies>
-        <links>
-            <link url="https://justattendvirtually.netlify.app/" text="Preview Site" />
-        </links>
-    </project> -->
+    </project>-->
 
-    <!-- <project>
+    <project>
         <title>HealthSync</title>
         <icon>fas fa-hospital</icon>
-        <description>A Hospital Management Software to streamline clinic operations with flawless EHR &amp; inventory management. Currently in development for a leading healthcare provider.</description>
+        <description>A Hospital Management Software to streamline clinic operations with flawless EHR &amp; inventory management.</description>
         <image>https://raw.githubusercontent.com/GoodnewsCodes/HealthSync/refs/heads/main/Screenshot%202025-04-19%20142049.png</image>
         <technologies>
             <tech>Flutter</tech>
@@ -138,9 +140,9 @@
             <tech>Firebase</tech>
         </technologies>
         <links>
-            <link url="https://github.com/GoodnewsCodes/HealthSync" text="(Coming Soon)" />
+            <link url="https://github.com/GoodnewsCodes/HealthSync" text="View on GitHub" />
         </links>
-    </project> -->
+    </project>
 
-
+    
 </projects>
