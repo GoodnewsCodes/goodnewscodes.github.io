@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Terminal, GitBranch, FileSpreadsheet, Database, Code, Paintbrush,
   Cpu, Smartphone, Target, Flame, Zap, Github, Linkedin,
-  ArrowRight, Send, Twitter
+  ArrowRight, Send, Twitter, ChevronDown
 } from 'lucide-react';
 import TechDoodleBackground from './components/TechDoodleBackground';
 import { projectsData } from './data/projects';
@@ -64,6 +64,7 @@ function SideNav({ activeSection }) {
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isLoading, setIsLoading] = useState(true);
+  const [heroImgExpanded, setHeroImgExpanded] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1200);
@@ -166,6 +167,18 @@ export default function App() {
             whileInView="whileInView"
             viewport={{ once: true, amount: 0.1 }}
           >
+            {/* Middle Top Image Card – tappable dropdown on mobile */}
+            <motion.div
+              className={`hero-img-card ${heroImgExpanded ? 'expanded' : ''}`}
+              variants={scaleUpVariant}
+              onClick={() => setHeroImgExpanded((prev) => !prev)}
+            >
+              <img src={profileImg} alt="Goodnews Anwana" />
+              <div className="hero-img-tap-hint">
+                <ChevronDown size={20} />
+              </div>
+            </motion.div>
+
             {/* Left Wide Card */}
             <motion.div className="hero-main" variants={scaleUpVariant}>
               <div>
@@ -173,7 +186,7 @@ export default function App() {
                 <p className='hero-role'>a Software Developer</p>
 
                 <motion.div className="hero-marquee-wrapper" {...fold}>
-                  <div className="marquee-container" style={{ padding: 0, background: 'transparent', color: 'var(--text-muted)', marginTop: '0.5rem', marginBottom: '2rem' }}>
+                   <div className="marquee-container" style={{ padding: 0, background: 'transparent', color: 'var(--text-muted)', marginTop: '0.5rem', marginBottom: '2rem' }}>
                     <div className="marquee-content" style={{ animationDuration: '15s', fontSize: '1rem', letterSpacing: '1px' }}>
                       <span>Problem Solver</span> · <span>AI Enthusiast</span> · <span>Builds with Flutter</span> · <span>Ships with React</span> · <span>Full Stack Tinkerer</span> · <span>Electron Builder</span>
                     </div>
@@ -214,11 +227,6 @@ export default function App() {
                   Resume <Download size={18} />
                 </motion.a>
               </div>
-            </motion.div>
-
-            {/* Middle Top Image Card */}
-            <motion.div className="hero-img-card" variants={scaleUpVariant}>
-              <img src={profileImg} alt="Goodnews Anwana" />
             </motion.div>
 
             {/* Middle Bottom Text Card */}
