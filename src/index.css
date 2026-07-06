@@ -718,6 +718,380 @@ h2 {
   color: var(--black);
 }
 
+.cta-btn.secondary {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+.cta-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+/* ─── ABOUT SECTION ─── */
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--dark-gray);
+  padding: 3rem 4rem;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-header h2 {
+  margin-bottom: 0;
+}
+
+.about-text-content p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-text-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-decoration {
+  position: absolute;
+  right: -5%;
+  top: -20%;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+.blob-2 {
+  background: var(--secondary);
+  animation-delay: -4s;
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+  67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+}
+
+/* ─── EXPERIENCE TIMELINE ─── */
+.timeline-section {
+  padding-top: 6rem;
+  position: relative;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-line-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(-50%);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.timeline-line-fill {
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  transform-origin: top;
+}
+
+.timeline-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-item {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--black);
+  z-index: 3;
+}
+
+.timeline-content {
+  width: calc(50% - 50px);
+  padding: 2rem;
+}
+
+.timeline-item.left .timeline-content {
+  text-align: right;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.timeline-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-content li {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+/* ─── TESTIMONIALS CAROUSEL ─── */
+.testimonials-section {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.carousel-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-card {
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  background: rgba(20, 20, 22, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quote-icon {
+  color: var(--primary);
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: var(--black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.testimonial-author h4 {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.testimonial-author span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: var(--primary);
+  color: var(--black);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.carousel-dots .dot.active {
+  background: var(--primary);
+  width: 24px;
+  border-radius: 10px;
+}
+
+/* ─── BLOG / CASE STUDIES ─── */
+.blog-section {
+  padding: 6rem 0;
+}
+
+.blog-card {
+  background: var(--medium-gray);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-icon-wrapper {
+  background: rgba(255, 87, 51, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.blog-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  align-self: flex-start;
+}
+
+.read-more-btn:hover {
+  color: var(--primary);
+  gap: 12px;
+}
+
 /* ─── FOOTER ─── */
 footer {
   text-align: center;

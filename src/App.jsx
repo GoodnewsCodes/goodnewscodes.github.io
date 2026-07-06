@@ -7,8 +7,12 @@ import {
 } from 'lucide-react';
 import TechDoodleBackground from './components/TechDoodleBackground';
 import { projectsData } from './data/projects';
-import { Instagram } from 'lucide-react';
+import { Instagram, Download } from 'lucide-react';
 import profileImg from '../images/profile.webp';
+import AboutMe from './components/AboutMe';
+import ExperienceTimeline from './components/ExperienceTimeline';
+import TestimonialsCarousel from './components/TestimonialsCarousel';
+import BlogSection from './components/BlogSection';
 const skillsList = [
   { name: 'Python', icon: Terminal },
   { name: 'Git', icon: GitBranch },
@@ -27,8 +31,12 @@ const skillsList = [
 function SideNav({ activeSection }) {
   const sections = [
     { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
+    { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'testimonials', label: 'Testimonials' },
+    { id: 'blog', label: 'Blog' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -182,18 +190,30 @@ export default function App() {
                   </a>
                 </div>
               </motion.div>
-              <motion.a
-                whileHover={{ scale: 1.04, y: -2 }}
-                whileTap={{ scale: 0.97 }}
-                href="#projects"
-                className="cta-btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                See what I've built <ArrowRight size={18} />
-              </motion.a>
+              <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
+                <motion.a
+                  whileHover={{ scale: 1.04, y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                  href="#projects"
+                  className="cta-btn"
+                  style={{ marginTop: 0 }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  See what I've built <ArrowRight size={18} />
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.04, y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                  href="https://github.com/GoodnewsCodes/Resume/releases/download/Resume/Goodnews.Anwana.s.Resume.1.pdf"
+                  className="cta-btn secondary"
+                  style={{ marginTop: 0 }}
+                >
+                  Resume <Download size={18} />
+                </motion.a>
+              </div>
             </motion.div>
 
             {/* Middle Top Image Card */}
@@ -215,6 +235,9 @@ export default function App() {
 
 
 
+        {/* ─── ABOUT ME ─── */}
+        <AboutMe />
+
         {/* ─── SKILLS BENTO ─── */}
         <section id="skills">
           <div className="skills-bento">
@@ -232,7 +255,7 @@ export default function App() {
               <h3 style={{ fontSize: '1.8rem', marginBottom: '0.5rem', color: 'var(--black)' }}>Web Frontend</h3>
               <p style={{ color: 'rgba(0,0,0,0.7)', marginBottom: '2rem' }}>Crafting responsive, interactive user interfaces.</p>
               <div className="skills-pill-group">
-                <span className="skill-pill dark"><Cpu size={18} /> React</span>
+                <span className="skill-pill dark">React</span>
                 <span className="skill-pill dark"><Code size={18} /> HTML</span>
                 <span className="skill-pill dark"><Paintbrush size={18} /> CSS</span>
                 <span className='skill-pill dark'>Next.js</span>
@@ -263,6 +286,11 @@ export default function App() {
                 <div className="skills-pill-group" style={{ flex: 1 }}>
                   <span className="skill-pill"><Database size={18} /> SQL</span>
                   <span className="skill-pill">Python</span>
+                  <span className="skill-pill">JavaScript</span>
+
+                  <span className='skill-pill'>TypeScript</span>
+                  <span className="skill-pill">Node.js</span>
+                  <span className='skill-pill'>Express.js</span>
                   <span className="skill-pill"><Flame size={18} /> Firebase</span>
                   <span className="skill-pill"><Zap size={18} /> Supabase</span>
                 </div>
@@ -280,6 +308,9 @@ export default function App() {
 
           </div>
         </section>
+
+        {/* ─── EXPERIENCE TIMELINE ─── */}
+        <ExperienceTimeline />
 
         {/* ─── PROJECTS ─── */}
         <section id="projects">
@@ -327,6 +358,12 @@ export default function App() {
             ))}
           </div>
         </section>
+
+        {/* ─── TESTIMONIALS ─── */}
+        <TestimonialsCarousel />
+
+        {/* ─── BLOG / CASE STUDIES ─── */}
+        <BlogSection />
 
         {/* ─── CONTACT ─── */}
         <section id="contact">
