@@ -148,10 +148,15 @@ export default function App() {
         <section id="home">
           <motion.div
             className="hero-bento"
+            variants={{
+              initial: {},
+              whileInView: {
+                transition: { staggerChildren: 0.2, delayChildren: 1.5 }
+              }
+            }}
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ staggerChildren: 0.15 }}
           >
             {/* Left Wide Card */}
             <motion.div className="hero-main" variants={scaleUpVariant}>

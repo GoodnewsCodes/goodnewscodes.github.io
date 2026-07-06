@@ -198,7 +198,7 @@ body {
 .main-wrapper {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
 /* Base section without full height now */
@@ -238,8 +238,8 @@ h2 {
   grid-template-columns: 5fr 4fr 2fr;
   grid-template-rows: 1.8fr 1fr;
   gap: 1.5rem;
-  min-height: 60vh;
-  max-height: 750px;
+  min-height: 50vh;
+  max-height: 580px;
 }
 
 .hero-main {
@@ -262,6 +262,7 @@ h2 {
   line-height: 1;
   letter-spacing: -1px;
   margin-bottom: 1.5rem;
+  white-space: nowrap;
 }
 
 .hero-role {
