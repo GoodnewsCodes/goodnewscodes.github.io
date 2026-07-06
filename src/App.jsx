@@ -8,7 +8,7 @@ import {
 import TechDoodleBackground from './components/TechDoodleBackground';
 import { projectsData } from './data/projects';
 import { Instagram } from 'lucide-react';
-
+import profileImg from '../images/profile.png';
 const skillsList = [
   { name: 'Python', icon: Terminal },
   { name: 'Git', icon: GitBranch },
@@ -198,7 +198,7 @@ export default function App() {
 
             {/* Middle Top Image Card */}
             <motion.div className="hero-img-card" variants={scaleUpVariant}>
-              <img src="images/profile.png" alt="Goodnews Anwana" />
+              <img src={profileImg} alt="Goodnews Anwana" />
             </motion.div>
 
             {/* Middle Bottom Text Card */}
