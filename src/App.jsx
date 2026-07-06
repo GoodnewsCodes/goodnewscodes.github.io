@@ -8,7 +8,7 @@ import {
 import TechDoodleBackground from './components/TechDoodleBackground';
 import { projectsData } from './data/projects';
 import { Instagram } from 'lucide-react';
-import profileImg from '../images/profile.png';
+import profileImg from '../images/profile.webp';
 const skillsList = [
   { name: 'Python', icon: Terminal },
   { name: 'Git', icon: GitBranch },
