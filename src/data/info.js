@@ -1,8 +1,8 @@
 export const experienceData = [
   {
     id: 1,
-    role: "Web Developer Intern",
-    company: "Nugitech",
+    role: "Web Dev Internship",
+    company: "Nugi echnologies",
     date: "Aug 2023 - Dec 2023",
     description: [
       "Built multiple web applications for local businesses using React and Node.js.",
@@ -21,6 +21,15 @@ export const experienceData = [
   },
   {
     id: 3,
+    role: "Software Engineer (Intern)",
+    company: "ETHEGEN",
+    date: "February 2026 - December 2026",
+    description: [
+      "",
+    ],
+  },
+  {
+    id: 4,
     role: "B.Sc Computer Science",
     company: "Arthur Jarvis University",
     date: "April 2024 - July 2027",
@@ -33,21 +42,21 @@ export const experienceData = [
 export const testimonialsData = [
   {
     id: 1,
-    quote: "Goodnews is an incredibly talented developer. His work on the NairaScan AI was top-notch and delivered ahead of schedule.",
+    quote: "Goodnews is an incredibly talented developer. His work on the JAV Attendance App was top-notch and was always delivered ahead of schedule.",
     name: "Henshaw Michael",
-    role: "CEO, AI Engineer @ Blim Tech",
+    role: "CEO & AI Engineer @ Blim Tech",
   },
   {
     id: 2,
     quote: "Working with Goodnews was a breeze. He has a great eye for design and writes clean, maintainable code.",
-    name: "Jane Smith",
-    role: "Senior Engineer @ OpenSource",
+    name: "Brendan",
+    role: "CEO @ ETHEGEN",
   },
   {
     id: 3,
-    quote: "A highly motivated individual who always goes the extra mile. The mobile app he built for us exceeded all expectations.",
-    name: "Michael Johnson",
-    role: "CEO @ Startup Inc.",
+    quote: "A highly motivated individual who always goes the extra mile. Every mentee should have a mentor like him",
+    name: "Collins",
+    role: "Student",
   },
 ];
 

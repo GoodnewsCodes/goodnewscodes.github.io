@@ -9,23 +9,11 @@ import TechDoodleBackground from './components/TechDoodleBackground';
 import { projectsData } from './data/projects';
 import { Instagram, Download } from 'lucide-react';
 import profileImg from '../images/profile.webp';
+import blimLogo from '../images/logo.png';
 import AboutMe from './components/AboutMe';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import TestimonialsCarousel from './components/TestimonialsCarousel';
 import BlogSection from './components/BlogSection';
-const skillsList = [
-  { name: 'Python', icon: Terminal },
-  { name: 'Git', icon: GitBranch },
-  { name: 'Excel for Data Analysis', icon: FileSpreadsheet },
-  { name: 'SQL', icon: Database },
-  { name: 'HTML', icon: Code },
-  { name: 'CSS', icon: Paintbrush },
-  { name: 'React', icon: Cpu },
-  { name: 'Flutter', icon: Smartphone },
-  { name: 'Dart', icon: Target },
-  { name: 'Firebase', icon: Flame },
-  { name: 'Supabase', icon: Zap }
-];
 
 // Floating side-dot navigation
 function SideNav({ activeSection }) {
@@ -182,13 +170,13 @@ export default function App() {
             {/* Left Wide Card */}
             <motion.div className="hero-main" variants={scaleUpVariant}>
               <div>
-                <h1>{renderKineticText("Hi, I'm Goodnews.")}</h1>
-                <p className='hero-role'>a Software Developer</p>
+                <h1>{renderKineticText("Hello, I'm Goodnews.")}</h1>
+                <p className='hero-role'>a Software Engineer</p>
 
                 <motion.div className="hero-marquee-wrapper" {...fold}>
-                   <div className="marquee-container" style={{ padding: 0, background: 'transparent', color: 'var(--text-muted)', marginTop: '0.5rem', marginBottom: '2rem' }}>
-                    <div className="marquee-content" style={{ animationDuration: '15s', fontSize: '1rem', letterSpacing: '1px' }}>
-                      <span>Problem Solver</span> · <span>AI Enthusiast</span> · <span>Builds with Flutter</span> · <span>Ships with React</span> · <span>Full Stack Tinkerer</span> · <span>Electron Builder</span>
+                  <div className="marquee-container" style={{ padding: 0, background: 'transparent', color: 'var(--text-muted)', marginTop: '0.5rem', marginBottom: '2rem' }}>
+                    <div className="marquee-content" style={{ animationDuration: '15s', fontSize: '1rem', letterSpacing: '0.2px' }}>
+                      <span>Problem Solver</span> · <span>AI Software Engr</span> · <span>Builds with Flutter</span> · <span>Ships with React</span> · <span>Full Stack Tinkerer</span> · <span>Electron Builder</span>
                     </div>
                   </div>
                 </motion.div>
@@ -198,8 +186,12 @@ export default function App() {
                 <p className='hero-role' style={{ fontSize: '0.85rem', marginBottom: '0.8rem', color: 'var(--text-muted)' }}>Organizations I've worked with</p>
                 <div className="org-list">
                   <a href="https://www.blimtechnologies.com" className='org-link' target="_blank" rel="noreferrer">
-                    <img src="https://www.blimtechnologies.com/logo.png" className='org-img' alt="Blim Tech" onError={(e) => e.target.style.display = 'none'} />
+                    <img src={blimLogo} className='org-img' alt="Blim Tech" onError={(e) => e.target.style.display = 'none'} />
                     Blim Tech
+                  </a>
+                  <a href="https://www.blimtechnologies.com" className='org-link' target="_blank" rel="noreferrer" style={{ fontFamily: 'Orbitron' }}>
+                    <img src='https://ethegen.com/images/ethegen-logo.png' className='org-img' alt="Blim Tech" onError={(e) => e.target.style.display = 'none'} />
+                    ETHEGEN
                   </a>
                 </div>
               </motion.div>
@@ -263,12 +255,14 @@ export default function App() {
               <h3 style={{ fontSize: '1.8rem', marginBottom: '0.5rem', color: 'var(--black)' }}>Web Frontend</h3>
               <p style={{ color: 'rgba(0,0,0,0.7)', marginBottom: '2rem' }}>Crafting responsive, interactive user interfaces.</p>
               <div className="skills-pill-group">
-                <span className="skill-pill dark">React</span>
                 <span className="skill-pill dark"><Code size={18} /> HTML</span>
                 <span className="skill-pill dark"><Paintbrush size={18} /> CSS</span>
+                <span className="skill-pill dark">JavaScript</span>
+                <span className="skill-pill dark">TypeScript</span>
+                <span className="skill-pill dark">React</span>
                 <span className='skill-pill dark'>Next.js</span>
               </div>
-              <Code size={120} style={{ position: 'absolute', bottom: -20, right: -20, opacity: 0.1, color: '#000' }} />
+              <Code size={120} style={{ position: 'absolute', bottom: -10, right: -14, opacity: 0.1, color: '#000' }} />
             </motion.div>
 
             {/* Top Right Tall */}
@@ -292,11 +286,10 @@ export default function App() {
                   </p>
                 </div>
                 <div className="skills-pill-group" style={{ flex: 1 }}>
-                  <span className="skill-pill"><Database size={18} /> SQL</span>
+                  <span className="skill-pill">SQL</span>
+                  <span className="skill-pill">NoSQL</span>
+                  <span className="skill-pill">PostgreSQL</span>
                   <span className="skill-pill">Python</span>
-                  <span className="skill-pill">JavaScript</span>
-
-                  <span className='skill-pill'>TypeScript</span>
                   <span className="skill-pill">Node.js</span>
                   <span className='skill-pill'>Express.js</span>
                   <span className="skill-pill"><Flame size={18} /> Firebase</span>
@@ -333,7 +326,7 @@ export default function App() {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.65, delay: idx * 0.07, ease: [0.16, 1, 0.3, 1] }}
               >
-                <div className="project-card">
+                <div className="">
                   <div
                     className="project-image"
                     style={{ backgroundImage: `url(${project.image})` }}

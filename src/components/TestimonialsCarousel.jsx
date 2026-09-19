@@ -51,7 +51,7 @@ export default function TestimonialsCarousel() {
           What people say
         </span>
       </h2>
-      
+
       <div className="carousel-wrapper">
         <button className="carousel-btn prev" onClick={() => paginate(-1)}>
           <ChevronLeft size={24} />
@@ -83,7 +83,7 @@ export default function TestimonialsCarousel() {
                 }
               }}
             >
-              <Quote size={40} className="quote-icon" />
+              <Quote size={30} className="quote-icon" />
               <p className="testimonial-quote">"{testimonialsData[currentIndex].quote}"</p>
               <div className="testimonial-author">
                 <div className="author-avatar">

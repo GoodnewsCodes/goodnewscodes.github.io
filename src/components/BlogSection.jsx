@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, BookOpen } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { caseStudiesData } from '../data/info';
 
 export default function BlogSection() {
@@ -15,9 +14,9 @@ export default function BlogSection() {
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.9, y: 30 },
-    visible: { 
-      opacity: 1, 
-      scale: 1, 
+    visible: {
+      opacity: 1,
+      scale: 1,
       y: 0,
       transition: { duration: 0.5, ease: "easeOut" }
     }
@@ -34,7 +33,7 @@ export default function BlogSection() {
         A closer look into the technical challenges I've solved and how I built them.
       </p>
 
-      <motion.div 
+      <motion.div
         className="bento-grid"
         variants={containerVariants}
         initial="hidden"
@@ -43,9 +42,6 @@ export default function BlogSection() {
       >
         {caseStudiesData.map((study, index) => (
           <motion.div key={study.id} className="bento-card col-span-6 blog-card" variants={itemVariants}>
-            <div className="blog-icon-wrapper">
-              <BookOpen size={24} color="var(--primary)" />
-            </div>
             <span className="blog-date">{study.date}</span>
             <h3>{study.title}</h3>
             <p>{study.excerpt}</p>
